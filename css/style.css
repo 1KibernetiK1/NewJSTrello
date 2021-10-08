@@ -1,0 +1,39 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+
+  body {
+    line-height: 22px;
+    font-weight: 400;
+    color: #000;
+    min-width: 1110px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+
+  .new_list__wrapper{
+    border: 2px solid black;  
+    width: 250px;
+    margin-left: 20px;
+  }
+
+  .forma{
+      margin: 20px;
+  }
+
+  .input{
+      margin-bottom: 10px;
+  }
+
+  
+
+ 
