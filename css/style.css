@@ -21,6 +21,7 @@ html {
   }
 
   .new_list__wrapper{
+    margin-top: 20px;  
     border: 2px solid black;  
     width: 250px;
     margin-left: 20px;
@@ -33,7 +34,27 @@ html {
   .input{
       margin-bottom: 10px;
   }
+  
+  .new_desk__wrapper{
+      border: 2px solid black;
+      margin-top: 50px;
+      width: 700px;
+      height: 500px;
+      margin-left: 20px;
+  }
 
+  .card{
+    border: 2px solid black;
+    width: 200px;
+    margin-top: 125px;
+    height: 50px;
+    margin-left: 20px; 
+  }
+
+  .new_desk{
+      display: flex;
+      margin-left: -1080px;
+  }
   
 
  
