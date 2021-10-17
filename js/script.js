@@ -1,9 +1,16 @@
-const btnCreateList = document.querySelector(".btn");
-const desk = document.querySelector(".new_desk");
+const btnCreateList = document.getElementById("btn-create-list");
+const desk = document.getElementById("desk");
+
 
 btnCreateList.addEventListener("click", function(){
     let list = document.createElement('div');
-    let listName = document.getElementById("list-name").nodeValue;
+    let listName = document.getElementById("list-name").value;
     list.innerHTML = listName;
-    listName.document.querySelector("#desk")
+    document.getElementById("desk").innerHTML+=listName;
+    
 });
+
+if(listName = null)
+{
+   listName = toString("Новый список");
+}
