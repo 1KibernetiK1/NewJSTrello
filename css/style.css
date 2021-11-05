@@ -1,33 +1,76 @@
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-body {
-  line-height: 22px;
-  font-weight: 400;
-  color: #000;
-  min-width: 1110px;
-  margin: 0;
-  padding: 0;
-}
 
 #new-list{
-  margin-left: 80px;
-  border: 2px solid black;
-  width: 250px;
+    border: green 2px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 15px;
+    width: 300px;
+    height: 200px;
 }
 
-#desk {
-  display: flex;
-  border: 2px solid black;
-  margin-top: 50px;
-  width: 700px;
-  height: 500px;
-  margin-left: 80px;
+#list-name{
+    width:60%;
+    height: 20%;
+}
+
+#btn-create-list{
+    width: 50%;
+    height: 40px;
+    background-color: green;
+    color: white;
+}
+
+#desk{
+    display: flex;
+    flex-wrap: wrap;
+    border: green 2px solid;
+    width: 99%;
+    height: 99%;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#clear_desk{
+    position: fixed;
+    left: 85%;
+    top: 50px;
+    width: 150px;
+    height: 25px;
+    color: white;
+    background-color: green;
+}
+
+.list{
+    min-width: 200px;
+    min-height: 150px;
+    margin: 30px;
+    border: green solid 1px;
+    background-color: white;
+    padding-left: 10px;
+}
+
+.list_content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card{
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.add_card{
+   margin-top: -10px;
+}
+
+.delete_card{
+    position: relative;
+    left: 170px;
+    bottom: 70px;
+}
+
+.edit-list{
+  width: 20px;
 }
