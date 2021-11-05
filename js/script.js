@@ -1,7 +1,7 @@
 const btnCreateList = document.querySelector("#btn-create-list");
 const desk = document.querySelector("#desk");
 let counter = 1;
-const clearBtn = document.querySelector("#clear_desk");
+const clearBtn = document.querySelector("#btn_clear_desk");
 const inputListName = document.querySelector("#list-name");
 
 
@@ -16,7 +16,7 @@ function AddList() {
     let listName = document.getElementById("list-name").value;
     let h2 = document.createElement("H2");
     if (listName == "") {
-        listName = "New list " + counter;
+        listName = "Новый список" + counter;
         counter++;
     }
 
@@ -30,7 +30,7 @@ function AddList() {
     list_content.append(edit_img);
     
     let add_card = document.createElement("p");
-    add_card.innerHTML = "+ add card";
+    add_card.innerHTML = " + Добавить карточку";
     add_card.classList.add("add_card");
 
     let delete_button_img = document.createElement("img");
@@ -55,17 +55,16 @@ function EditList(e) {
         }
         if(obj.classList.contains("delete-list")){
             obj.parentNode.parentNode.remove();
-            counter = 1;
+            //counter = 1;
         }
         if(obj.classList.contains("add_card")){
             let card = document.createElement("div");
-            card.classList.add("card");
-            card.innerHTML = "<textarea></textarea> <p class='delete_card'>X</p>";
+            card.classList.add("list-card");
+            card.innerHTML = "<textarea class='area' ></textarea> <p><img class='delete_card' src='img/times-solid.svg' alt=''></p>";
             obj.append(card);
         }
         if(obj.classList.contains("delete_card")){
-            console.log("кнопка удалить карточку X" + obj);
-            obj.parentNode.remove();
+            obj.parentNode.parentNode.remove();
         }
 }
 
@@ -82,8 +81,6 @@ clearBtn.addEventListener("click", function () {
     desk.innerHTML = null;
     counter = 1;
 });
-
-btnCreateList.addEventListener("click", AddList);
 
 desk.addEventListener("click", EditList);
 

@@ -1,76 +1,99 @@
-
-#new-list{
-    border: green 2px solid;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-left: 15px;
-    width: 300px;
-    height: 200px;
+#new-list {
+  border: green 2px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 15px;
+  width: 300px;
+  height: 200px;
 }
 
-#list-name{
-    width:60%;
-    height: 20%;
+#list-name {
+  width: 60%;
+  height: 20%;
 }
 
-#btn-create-list{
-    width: 50%;
-    height: 40px;
-    background-color: green;
-    color: white;
+#btn-create-list {
+  width: 50%;
+  height: 40px;
+  background-color: green;
+  color: white;
 }
 
-#desk{
-    display: flex;
-    flex-wrap: wrap;
-    border: green 2px solid;
-    width: 99%;
-    height: 99%;
-    margin-top: 20px;
-    padding-left: 10px;
-    padding-top: 10px;
+#btn_clear_desk {
+  position: absolute;
+  left: 80%;
+  top: 100px;
+  width: 200px;
+  height: 25px;
+  color: white;
+  background-color: green;
 }
 
-#clear_desk{
-    position: fixed;
-    left: 85%;
-    top: 50px;
-    width: 150px;
-    height: 25px;
-    color: white;
-    background-color: green;
+#btn-create-list:hover {
+  background-color: rgb(91, 170, 12);
 }
 
-.list{
-    min-width: 200px;
-    min-height: 150px;
-    margin: 30px;
-    border: green solid 1px;
-    background-color: white;
-    padding-left: 10px;
+#btn_clear_desk:hover { 
+  background-color: rgb(91, 170, 12);
 }
 
-.list_content{
-    display: flex;
-    justify-content: space-evenly;
+#desk {
+  display: flex;
+  flex-wrap: wrap;
+  border: green 2px solid;
+  width: 99%;
+  height: 99%;
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
-.card{
-    height: 50px;
-    margin-bottom: 20px;
+
+
+.list {
+  min-width: 200px;
+  min-height: 150px;
+  margin: 30px;
+  border: green solid 1px;
+  background-color: white;
+  padding-left: 10px;
 }
 
-.add_card{
-   margin-top: -10px;
+.list_content {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.delete_card{
-    position: relative;
-    left: 170px;
-    bottom: 70px;
-}
 
-.edit-list{
+.edit-list {
   width: 20px;
+  margin-right: 10px;
+  margin-left: 5px;
 }
+
+.list-card {
+  margin: 20px;
+}
+
+.list-card:hover .delete_card{
+  display:block;
+  position: relative;
+  width: 10px;
+  left: 155px;
+  bottom: 80px;
+}
+
+.add_card {
+  margin-top: -10px;
+}
+
+.delete_card {
+  display: none;
+}
+
+.area{
+  height: 60px;
+}
+
+
